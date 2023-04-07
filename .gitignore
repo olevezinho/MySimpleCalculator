@@ -364,3 +364,6 @@ FodyWeavers.xsd
 
 # Images
 img/
+
+# NuGet config
+/MySimpleCalculator/MaintainerInfo/nuget.config
