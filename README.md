@@ -1,3 +1,3 @@
 # MySimpleCalculator
 
-Small library containing a basic operations
+Small library with basic math operations
