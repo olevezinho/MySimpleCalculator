@@ -40,6 +40,7 @@
                 .AddMvcOptions(options => options.EnableEndpointRouting = false);
 
             services.AddCalculatorService();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1",
