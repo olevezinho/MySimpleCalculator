@@ -363,4 +363,8 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # Images
-img/
+src/img/
+
+# NuGet config
+/src/MySimpleCalculator/MaintainerInfo/nuget.config
+/src/MySimpleCalculatorWebAPI/Dockerfile
