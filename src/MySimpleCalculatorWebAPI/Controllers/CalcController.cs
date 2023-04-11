@@ -3,6 +3,7 @@
     using System;
     using Microsoft.AspNetCore.Mvc;
     using MySimpleCalculator;
+    using MySimpleCalculatorWebAPI.Extensions;
 
     /// <summary>Calculator controller class: Two methods</summary>
     [Produces("application/json")]
@@ -95,6 +96,30 @@
             try
             {
                 return new ObjectResult(calculator.Divide(n1, n2).ToString());
+            }
+            catch (DivideByZeroException ex)
+            {
+                return ex.Message;
+            }
+            catch (ArgumentNullException ex)
+            {
+                return ex.Message;
+            }
+        }
+
+        /// <summary>
+        /// Divide two numbers and return the result
+        /// </summary>
+        /// <param name="n1"></param>
+        /// <param name="n2"></param>
+        /// <returns>200 OK; 404 Bad Request</returns>
+        // POST api/values
+        [HttpPost("mod/{n1}/{n2}")]
+        public ActionResult<string> PostNumbersMod(int n1, int n2)
+        {
+            try
+            {
+                return new ObjectResult(calculator.Mod(n1, n2).ToString());
             }
             catch (DivideByZeroException ex)
             {
