@@ -13,6 +13,7 @@
         /// <summary>Initializes a new instance of the <see cref="Startup"/> class.</summary>
         /// <param name="configuration">The configuration.</param>
         private readonly IWebHostEnvironment hosting;
+        private readonly string url = "http://localhost";
 
         /// <summary>
         /// Constructor for startup class
@@ -44,13 +45,13 @@
                 c.SwaggerDoc("v1",
                 new Microsoft.OpenApi.Models.OpenApiInfo
                 {
-                    Title = "Calculator Web App" + hosting.EnvironmentName,
+                    Title = "Calculator Web App, " + hosting.EnvironmentName,
                     Version = "v1",
-                    Description = "Web API example, created with ASP.NET CORE",
+                    Description = "Web API example, created with .NET CORE 6",
                     Contact = new Microsoft.OpenApi.Models.OpenApiContact
                     {
                         Name = "Filipe Costa",
-                        Url = new System.Uri("http://localhost")
+                        Url = new System.Uri(url)
                     }
                 });
             });
