@@ -1,3 +1,3 @@
 # MySimpleCalculator
 
-Small package containing a basic calculator
+Small library containing a basic calculator, with a web API where the package is used
