@@ -15,15 +15,15 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="..\img\luis-brochado-software-engineer_128x128.png" Link="MaintainerInfo\luis-brochado-software-engineer_128x128.png">
+		<None Include="..\..\img\luis-brochado-software-engineer_128x128.png" Link="MaintainerInfo\luis-brochado-software-engineer_128x128.png">
 		  <Pack>True</Pack>
 		  <PackagePath>\</PackagePath>
 		</None>
-		<None Include="..\LICENSE">
+		<None Include="..\..\LICENSE">
 		  <Pack>True</Pack>
-		  <PackagePath>\</PackagePath>
+		  <PackagePath>..\</PackagePath>
 		</None>
-		<None Include="..\README.md">
+		<None Include="..\..\README.md">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>

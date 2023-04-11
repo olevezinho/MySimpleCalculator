@@ -363,7 +363,7 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # Images
-img/
+src/img/
 
 # NuGet config
-/MySimpleCalculator/MaintainerInfo/nuget.config
+/src/MySimpleCalculator/MaintainerInfo/nuget.config
