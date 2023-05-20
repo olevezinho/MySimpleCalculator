@@ -5,7 +5,13 @@ VisualStudioVersion = 17.0.31521.260
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySimpleCalculator", "src\MySimpleCalculator\MySimpleCalculator.csproj", "{57C9F110-09E2-433B-A2F1-6752F918046D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySimpleCalculatorWebAPI", "src\MySimpleCalculatorWebAPI\MySimpleCalculatorWebAPI.csproj", "{DEDF0E26-30A3-4E08-8CBC-1E46D9DC958E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySimpleCalculatorWebAPI", "src\MySimpleCalculatorWebAPI\MySimpleCalculatorWebAPI.csproj", "{DEDF0E26-30A3-4E08-8CBC-1E46D9DC958E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{F974D1CF-BF48-40E6-93A2-5DE4BDDACDDA}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+		package-to-github.ps1 = package-to-github.ps1
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
