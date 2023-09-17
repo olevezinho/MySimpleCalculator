@@ -7,7 +7,7 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/olevezinho/MySimpleCalculator</RepositoryUrl>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageLicenseFile>../LICENSE</PackageLicenseFile>
 		<PackageProjectUrl>https://github.com/olevezinho/MySimpleCalculator</PackageProjectUrl>
 		<Title>Simple calculator</Title>
 		<PackageIcon>luis-brochado-software-engineer_128x128.png</PackageIcon>

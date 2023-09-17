@@ -5,7 +5,13 @@ VisualStudioVersion = 17.0.31521.260
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySimpleCalculator", "src\MySimpleCalculator\MySimpleCalculator.csproj", "{57C9F110-09E2-433B-A2F1-6752F918046D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySimpleCalculatorWebAPI", "src\MySimpleCalculatorWebAPI\MySimpleCalculatorWebAPI.csproj", "{DEDF0E26-30A3-4E08-8CBC-1E46D9DC958E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySimpleCalculatorWebAPI", "src\MySimpleCalculatorWebAPI\MySimpleCalculatorWebAPI.csproj", "{DEDF0E26-30A3-4E08-8CBC-1E46D9DC958E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{484D2287-3FD9-4650-B3B4-5B07B00CE301}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySimpleCalculator.UnitTests", "test\MySimpleCalculator.UnitTests\MySimpleCalculator.UnitTests.csproj", "{824E69CE-44EC-4FAB-B79E-24909B808A26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySimpleCalculatorWebAPI.IntegrationTests", "test\MySimpleCalculatorWebAPI.IntegrationTests\MySimpleCalculatorWebAPI.IntegrationTests.csproj", "{6F585D37-9883-47E8-99B0-340BE6F02703}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +27,21 @@ Global
 		{DEDF0E26-30A3-4E08-8CBC-1E46D9DC958E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEDF0E26-30A3-4E08-8CBC-1E46D9DC958E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEDF0E26-30A3-4E08-8CBC-1E46D9DC958E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{824E69CE-44EC-4FAB-B79E-24909B808A26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{824E69CE-44EC-4FAB-B79E-24909B808A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{824E69CE-44EC-4FAB-B79E-24909B808A26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{824E69CE-44EC-4FAB-B79E-24909B808A26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F585D37-9883-47E8-99B0-340BE6F02703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F585D37-9883-47E8-99B0-340BE6F02703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F585D37-9883-47E8-99B0-340BE6F02703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F585D37-9883-47E8-99B0-340BE6F02703}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{824E69CE-44EC-4FAB-B79E-24909B808A26} = {484D2287-3FD9-4650-B3B4-5B07B00CE301}
+		{6F585D37-9883-47E8-99B0-340BE6F02703} = {484D2287-3FD9-4650-B3B4-5B07B00CE301}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DA6302E8-618B-40AC-9D9A-41FC642D350B}
