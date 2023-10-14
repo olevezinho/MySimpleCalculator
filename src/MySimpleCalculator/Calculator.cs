@@ -1,7 +1,9 @@
 ﻿namespace MySimpleCalculator
 {
     using System;
-
+    using System.Diagnostics.CodeAnalysis;
+    
+    [SuppressMessage("NDepend", "ND1608:Types100PercentCoveredShouldBeTaggedWithFullCoveredAttribute", Justification="...")]
     public class Calculator : ICalculator
     {
         public int Add(int? n1, int? n2)

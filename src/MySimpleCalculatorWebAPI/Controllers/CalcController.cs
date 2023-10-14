@@ -1,9 +1,9 @@
 ﻿namespace MyCalculatorWebApp.Controllers
 {
-    using System;
     using Microsoft.AspNetCore.Mvc;
     using MySimpleCalculator;
     using MySimpleCalculatorWebAPI.Extensions;
+    using System;
 
     /// <summary>Calculator controller class: Two methods</summary>
     [Produces("application/json")]

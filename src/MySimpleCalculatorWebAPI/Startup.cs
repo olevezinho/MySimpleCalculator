@@ -1,5 +1,9 @@
 ﻿namespace MyCalculatorWebApp
 {
+    using global::NDepend;
+    using global::NDepend.Analysis;
+    using global::NDepend.Path;
+    using global::NDepend.Project;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.Extensions.Configuration;
@@ -56,6 +60,33 @@
                     }
                 });
             });
+
+            var ndependServicesProvider = new NDependServicesProvider();
+ 
+            // Example of using the NDepend.API
+            var projectManager = ndependServicesProvider.ProjectManager;
+            IProject project = projectManager.LoadProject(
+                @"C:\YourPathToYourNDependProjectFile\File.ndproj".ToAbsoluteFilePath());
+    
+            // Try to load the most recent analysis result
+            var refs = project.GetAvailableAnalysisResultsRefs();
+            if (!refs.Any()) { return; }
+            IAnalysisResult result = refs[0].Load();
+    
+            // Obtain source files paths from the analysis result code base model 
+            // For example this can be done this way:
+            var sourceFiles = result.CodeBase.Application.CodeElements
+                .Where(c => c.SourceFileDeclAvailable)
+                .SelectMany(c => c.SourceDecls)
+                .Select(c => c.SourceFile.FilePath)
+                .Distinct()
+                .ToList();
+    
+            // Print all source files paths
+            foreach (IAbsoluteFilePath sourceFilePath in sourceFiles) 
+            {
+                Console.WriteLine(sourceFilePath.ToString());
+            }
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
