@@ -4,7 +4,7 @@ namespace MyCalculatorWebApp
     using Microsoft.AspNetCore;
     using Microsoft.AspNetCore.Hosting;
     using MyCalculatorWebApp.NDepend;
-    using NDepend;
+    //using NDepend;
 
     /// <summary>Class program</summary>
     public static class Program
@@ -16,7 +16,7 @@ namespace MyCalculatorWebApp
         // parametrized with the relative path to the dir "$NDependInstallDir$\Lib".
         // Since  NDepend.PowerTool.exe  is in the dir "$NDependInstallDir$"
         // the relative path is @".\Lib"
-        private static readonly AssemblyResolver s_AssemblyResolver = new AssemblyResolver(Path);
+        //private static readonly AssemblyResolver s_AssemblyResolver = new AssemblyResolver(Path);
 
         /// <summary>Defines the entry point of the application.</summary>
         /// <param name="args">The arguments.</param>

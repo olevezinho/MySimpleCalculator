@@ -33,4 +33,10 @@
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
 	</ItemGroup>
 
+	<ItemGroup>
+    	<Reference Include="NDepend.API">
+      		<HintPath>/home/luis_filipe/ndepend/Lib/NDepend.API.dll</HintPath>
+    	</Reference>
+  	</ItemGroup>
+
 </Project>

@@ -367,3 +367,6 @@ src/img/
 
 # NuGet config
 /src/MySimpleCalculatorWebAPI/Dockerfile
+
+# NDepend files
+/NDependOut

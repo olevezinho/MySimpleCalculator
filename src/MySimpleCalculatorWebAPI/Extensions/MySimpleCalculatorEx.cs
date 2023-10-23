@@ -1,9 +1,9 @@
 ﻿namespace MySimpleCalculatorWebAPI.Extensions
 {
     using MySimpleCalculator;
-    using NDepend.Attributes;
+    //using NDepend.Attributes;
 
-    [FullCovered]
+    //[FullCovered]
     public static class MySimpleCalculatorEx
     {
         public static int Mod(this ICalculator calculator, int? n1, int? n2)

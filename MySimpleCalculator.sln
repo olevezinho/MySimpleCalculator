@@ -13,6 +13,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySimpleCalculator.UnitTest
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySimpleCalculatorWebAPI.IntegrationTests", "test\MySimpleCalculatorWebAPI.IntegrationTests\MySimpleCalculatorWebAPI.IntegrationTests.csproj", "{6F585D37-9883-47E8-99B0-340BE6F02703}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{31C8FCCD-9FA3-4643-9B82-5D8DBCA3858B}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		MySimpleCalculator.ndproj = MySimpleCalculator.ndproj
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{E5457B5C-B17E-4577-BE49-121DF8ADE889}"
+	ProjectSection(SolutionItems) = preProject
+		img\luis-brochado-software-engineer_128x128.png = img\luis-brochado-software-engineer_128x128.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +55,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{824E69CE-44EC-4FAB-B79E-24909B808A26} = {484D2287-3FD9-4650-B3B4-5B07B00CE301}
 		{6F585D37-9883-47E8-99B0-340BE6F02703} = {484D2287-3FD9-4650-B3B4-5B07B00CE301}
+		{E5457B5C-B17E-4577-BE49-121DF8ADE889} = {31C8FCCD-9FA3-4643-9B82-5D8DBCA3858B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DA6302E8-618B-40AC-9D9A-41FC642D350B}

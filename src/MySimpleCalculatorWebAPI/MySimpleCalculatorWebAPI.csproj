@@ -17,7 +17,7 @@
 
   <ItemGroup>
     <Reference Include="NDepend.API">
-      <HintPath>/home/filipe/ndepend/Lib/NDepend.API.dll</HintPath>
+      <HintPath>/home/luis_filipe/ndepend/Lib/NDepend.API.dll</HintPath>
     </Reference>
   </ItemGroup>
 
